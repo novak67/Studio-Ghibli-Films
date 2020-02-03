@@ -15,6 +15,7 @@
 		750119B723E8879B008AF431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750119B523E8879B008AF431 /* LaunchScreen.storyboard */; };
 		750119C223E8879C008AF431 /* Studio_Ghibli_FilmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119C123E8879C008AF431 /* Studio_Ghibli_FilmsTests.swift */; };
 		750119CD23E8879C008AF431 /* Studio_Ghibli_FilmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119CC23E8879C008AF431 /* Studio_Ghibli_FilmsUITests.swift */; };
+		750119DD23E88882008AF431 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119DC23E88882008AF431 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		750119C823E8879C008AF431 /* Studio Ghibli FilmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Studio Ghibli FilmsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750119CC23E8879C008AF431 /* Studio_Ghibli_FilmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studio_Ghibli_FilmsUITests.swift; sourceTree = "<group>"; };
 		750119CE23E8879C008AF431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750119DC23E88882008AF431 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				750119B323E8879B008AF431 /* Assets.xcassets */,
 				750119B523E8879B008AF431 /* LaunchScreen.storyboard */,
 				750119B823E8879B008AF431 /* Info.plist */,
+				750119DC23E88882008AF431 /* SwiftyJSON.swift */,
 			);
 			path = "Studio Ghibli Films";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				750119AF23E88799008AF431 /* ViewController.swift in Sources */,
 				750119AB23E88799008AF431 /* AppDelegate.swift in Sources */,
 				750119AD23E88799008AF431 /* SceneDelegate.swift in Sources */,
+				750119DD23E88882008AF431 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
