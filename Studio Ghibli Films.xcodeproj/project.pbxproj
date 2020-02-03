@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		750119AB23E88799008AF431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119AA23E88799008AF431 /* AppDelegate.swift */; };
 		750119AD23E88799008AF431 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119AC23E88799008AF431 /* SceneDelegate.swift */; };
-		750119AF23E88799008AF431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119AE23E88799008AF431 /* ViewController.swift */; };
+		750119AF23E88799008AF431 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750119AE23E88799008AF431 /* FilmsViewController.swift */; };
 		750119B223E88799008AF431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750119B023E88799008AF431 /* Main.storyboard */; };
 		750119B423E8879B008AF431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750119B323E8879B008AF431 /* Assets.xcassets */; };
 		750119B723E8879B008AF431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750119B523E8879B008AF431 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		750119A723E88799008AF431 /* Studio Ghibli Films.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Studio Ghibli Films.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750119AA23E88799008AF431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750119AC23E88799008AF431 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		750119AE23E88799008AF431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		750119AE23E88799008AF431 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		750119B123E88799008AF431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		750119B323E8879B008AF431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750119B623E8879B008AF431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				750119AA23E88799008AF431 /* AppDelegate.swift */,
 				750119AC23E88799008AF431 /* SceneDelegate.swift */,
-				750119AE23E88799008AF431 /* ViewController.swift */,
+				750119AE23E88799008AF431 /* FilmsViewController.swift */,
 				750119B023E88799008AF431 /* Main.storyboard */,
 				750119B323E8879B008AF431 /* Assets.xcassets */,
 				750119B523E8879B008AF431 /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750119AF23E88799008AF431 /* ViewController.swift in Sources */,
+				750119AF23E88799008AF431 /* FilmsViewController.swift in Sources */,
 				750119AB23E88799008AF431 /* AppDelegate.swift in Sources */,
 				750119AD23E88799008AF431 /* SceneDelegate.swift in Sources */,
 				750119DD23E88882008AF431 /* SwiftyJSON.swift in Sources */,
