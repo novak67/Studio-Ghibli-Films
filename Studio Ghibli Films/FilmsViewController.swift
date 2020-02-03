@@ -9,9 +9,13 @@
 import UIKit
 
 class FilmsViewController: UITableViewController {
+    
+    var sources = [[String: String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Ghibli Films"
+        let query = "https://ghibliapi.herokuapp.com/films"
         // Do any additional setup after loading the view.
     }
 
