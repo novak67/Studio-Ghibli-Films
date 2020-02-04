@@ -16,15 +16,17 @@ class FilmsViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "Studio Ghibli Films"
         let query = "https://ghibliapi.herokuapp.com/films"
-        
-        if let url = URL(string: query) {
-            if let data = try? Data(contentsOf: url) {
-                let json = try! JSON(data: data)
-                parse(json: json)
-                return
+        DispatchQueue.global(qos: .userInitiated).async {
+            [unowned self] in
+            if let url = URL(string: query) {
+                if let data = try? Data(contentsOf: url) {
+                    let json = try! JSON(data: data)
+                    self.parse(json: json)
+                    return
+                }
             }
+            self.loadError()
         }
-        loadError()
     }
     func parse(json: JSON) {
         for result in json[].arrayValue {
@@ -37,14 +39,20 @@ class FilmsViewController: UITableViewController {
             let film = ["title": title, "description": description, "director": director, "producer": producer, "release_date": release_date, "rt_score": rt_score]
             films.append(film)
         }
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            [unowned self] in
+            self.tableView.reloadData()
+        }
     }
     func loadError() {
-        let alert = UIAlertController(title: "Loading Error",
-                                      message: "There was a problem loading the list",
-                                      preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            [unowned self] in
+            let alert = UIAlertController(title: "Loading Error",
+                                          message: "There was a problem loading the list",
+                                          preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return films.count
