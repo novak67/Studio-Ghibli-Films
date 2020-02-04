@@ -14,7 +14,7 @@ class FilmsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Ghibli Films"
+        self.title = "Studio Ghibli Films"
         let query = "https://ghibliapi.herokuapp.com/films"
         
         if let url = URL(string: query) {
@@ -44,5 +44,16 @@ class FilmsViewController: UITableViewController {
                                       message: "There was a problem loading the list",
                                       preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil) }
+        present(alert, animated: true, completion: nil)
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return films.count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let film = films[indexPath.row]
+        cell.textLabel?.text = film["title"]
+        cell.detailTextLabel?.text = film["release_date"]
+        return cell
+    }
 }
